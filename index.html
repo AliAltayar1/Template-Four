@@ -112,6 +112,7 @@
           Dashboard
         </h1>
         <div class="cards wrapping gap-3 p-3">
+          <!-- start welcome -->
           <div class="welcome bor-rad">
             <div class="up d-flex justify-content-between p-3">
               <div>
@@ -143,6 +144,8 @@
             </div>
             <a href="#" class="btn btn-primary">Profile</a>
           </div>
+          <!-- end welcome -->
+          <!-- start quick-draft -->
           <div class="quick-draft bor-rad p-4">
             <div class="headding mb-4">
               <h1 class="fw-bold fs-4">Quick Draft</h1>
@@ -157,6 +160,8 @@
             </div>
             <a href="#" class="btn btn-primary me-0">Save</a>
           </div>
+          <!-- end quick-draft -->
+          <!-- start yearly-targets -->
           <div class="yearly-targets bor-rad p-4" id="yearly-targets">
             <div class="headding mb-4">
               <h1 class="fw-bold fs-4">Yearly Targets</h1>
@@ -226,6 +231,8 @@
               </div>
             </div>
           </div>
+          <!-- end yearly-targets -->
+          <!-- start tickets-statistics -->
           <div class="tickets-statistics bor-rad p-4 bg-white">
             <div class="headding mb-4">
               <h1 class="fw-bold fs-4">Tickets Statistics</h1>
@@ -274,6 +281,8 @@
               </div>
             </div>
           </div>
+          <!-- end tickets-statistics -->
+          <!-- start latest-news -->
           <div class="latest-news bor-rad p-4 bg-white">
             <div class="headding mb-4">
               <h1 class="fw-bold fs-4">Latest News</h1>
@@ -325,6 +334,8 @@
               <span class="in-bor-rad px-2 py-1">9 Days Ago</span>
             </div>
           </div>
+          <!-- end latest-news -->
+          <!-- start latest-task -->
           <div class="latest-task bor-rad p-4 bg-white">
             <div class="headding mb-4">
               <h1 class="fw-bold fs-4">Latest Task</h1>
@@ -392,7 +403,12 @@
               <i class="fa-regular fa-trash-can delete"></i>
             </div>
           </div>
-          <div class="top-search-items bor-rad p-4 bg-white">
+          <!-- end latest-task -->
+          <!-- start latest-task -->
+          <div
+            class="top-search-items bor-rad p-4 bg-white"
+            style="display: block"
+          >
             <div class="headding mb-4">
               <h1 class="fw-bold fs-4">Top Search Items</h1>
             </div>
@@ -496,6 +512,8 @@
               >
             </div>
           </div>
+          <!-- end latest-task -->
+          <!-- start latest-upload -->
           <div class="latest-upload bor-rad p-4 bg-white">
             <div class="headding mb-4">
               <h1 class="fw-bold fs-4">Latest Uploads</h1>
@@ -607,6 +625,8 @@
               >
             </div>
           </div>
+          <!-- end latest-upload -->
+          <!-- start last-project-progress -->
           <div
             class="last-project-progress position-relative bor-rad p-4 bg-white"
           >
@@ -647,6 +667,8 @@
             </ul>
             <img class="progress-img" src="imgs/project.png" alt="" />
           </div>
+          <!-- end last-project-progress -->
+          <!-- start reminders -->
           <div class="reminders position-relative bor-rad p-4 bg-white">
             <div class="headding mb-4">
               <h1 class="fw-bold fs-4">Reminders</h1>
@@ -708,6 +730,8 @@
               </li>
             </ul>
           </div>
+          <!-- end reminders -->
+          <!-- start latest-post -->
           <div class="latest-post position-relative bor-rad p-4 bg-white">
             <div class="headding mb-4">
               <h1 class="fw-bold fs-4">Latest Post</h1>
@@ -744,6 +768,8 @@
               </li>
             </ul>
           </div>
+          <!-- end latest-post -->
+          <!-- start soical-media-stats -->
           <div
             class="soical-media-stats position-relative bor-rad p-4 bg-white"
           >
@@ -825,7 +851,9 @@
               </div>
             </div>
           </div>
+          <!-- end soical-media-stats -->
         </div>
+        <!-- start table -->
         <div class="table-content m-4 bg-white bor-rad p-4">
           <h1 class="fw-bold fs-4 mb-4">Projects</h1>
           <div class="responsive-table">
@@ -952,15 +980,19 @@
             </table>
           </div>
         </div>
+        <!-- end table -->
       </div>
     </div>
     <script>
       const myCardDivs = document.querySelectorAll(".dashboard .cards>div");
-      console.log(myCardDivs);
+      // function to hide of show the div depend on local storage
       function showOrHideDiv() {
         for (let i = 1; i < 7; i++) {
-          const isChecked = localStorage.getItem(`isChecked${i}`) == "true";
-          console.log(myCardDivs[i]);
+          // make isCheck true if it in local storage and true or when its value null
+          const isChecked =
+            localStorage.getItem(`isChecked${i}`) == "true" ||
+            localStorage.getItem(`isChecked${i}`) == null;
+
           if (isChecked) {
             myCardDivs[i].style.display = "block";
           } else {
