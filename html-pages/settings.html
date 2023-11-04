@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700&family=Open+Sans:wght@300;400;500;700&family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Settings</title>
+  </head>
+  <body>
+    <div class="settings page d-flex">
+      <aside class="text-center">
+        <h3 class="mb-5 fs-4 position-relative fw-bold">Ali</h3>
+        <ul class="list-unstyled text-start">
+          <li>
+            <a class="d-flex align-items-center p-2 mb-2" href="/index.html">
+              <i class="fa-regular fa-chart-bar fa-fw"></i>
+              <span class="ps-3">Dashboard</span>
+            </a>
+          </li>
+          <li class="">
+            <a
+              class="d-flex align-items-center p-2 mb-2 text-decoration-none active"
+              href="settings.html"
+            >
+              <i class="fa-solid fa-gear fa-fw pe-3 fs-6"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-items-center p-2 mb-2 text-decoration-none"
+              href="profile.html"
+            >
+              <i class="fa-regular fa-user fa-fw pe-3 fs-6"></i>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-items-center p-2 mb-2 text-decoration-none"
+              href="projects.html"
+            >
+              <i class="fa-solid fa-diagram-project fa-fw pe-3 fs-6"></i>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-items-center p-2 mb-2 text-decoration-none"
+              href="courses.html"
+            >
+              <i class="fa-solid fa-graduation-cap fa-fw pe-3 fs-6"></i>
+              <span>Courses</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-items-center p-2 mb-2 text-decoration-none"
+              href="friends.html"
+            >
+              <i class="fa-regular fa-circle-user fa-fw pe-3 fs-6"></i>
+              <span>Friends</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-items-center p-2 mb-2 text-decoration-none"
+              href="files.html"
+            >
+              <i class="fa-regular fa-file fa-fw pe-3 fs-6"></i>
+              <span>Files</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-items-center p-2 mb-2 text-decoration-none"
+              href="plans.html"
+            >
+              <i class="fa-regular fa-credit-card fa-fw pe-3 fs-6"></i>
+              <span>Plans</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <div class="main-container">
+        <div
+          class="header d-flex justify-content-between align-items-center p-3"
+        >
+          <div class="search position-relative">
+            <input class="" type="search" placeholder="Type A Keyword" />
+          </div>
+          <div class="icon d-flex align-items-center">
+            <span class="position-relative me-3 cur-p">
+              <i class="fa-regular fa-bell fa-lg"></i>
+            </span>
+            <img class="cur-p" src="/imgs/avatar.png" alt="Profile Photo" />
+          </div>
+        </div>
+        <h1 class="fw-bold fs-2 m-4 mb-5 position-relative page-title">
+          Settings
+        </h1>
+        <div class="cards wrapping gap-3 p-3">
+          <div class="site-control bg-white bor-rad p-4">
+            <div class="headding mb-4">
+              <h1 class="fw-bold fs-4">Site Control</h1>
+              <span class="sub-font"
+                >Control The Website If There Is Maintenance</span
+              >
+            </div>
+            <div
+              class="close-open d-flex justify-content-between align-items-center"
+            >
+              <div class="text">
+                <span class="les-bold">Website Control</span>
+                <p class="sub-font les-bold" style="font-size: 13px">
+                  Open/Close Website And Type The Reason
+                </p>
+              </div>
+              <div class="toggle checked"></div>
+            </div>
+            <textarea
+              class="w-full bor-rad p-2 mt-3"
+              placeholder="Close Message Content"
+            ></textarea>
+          </div>
+          <div class="general-info bg-white bor-rad p-4">
+            <div class="headding mb-4">
+              <h1 class="fw-bold fs-4">General Info</h1>
+              <span class="sub-font"
+                >General Information About Your Account</span
+              >
+            </div>
+            <label for="f-name" class="sub-font mb-2">First Name</label>
+            <input
+              id="f-name"
+              class="w-full p-2 in-bor-rad bor-gray fs-13"
+              type="text"
+              placeholder="First Name"
+            />
+            <label for="l-name" class="sub-font mt-3 mb-2">Last Name</label>
+            <input
+              id="l-name"
+              class="w-full p-2 in-bor-rad bor-gray fs-13"
+              type="text"
+              placeholder="Last Name"
+            />
+            <label for="mail" class="sub-font mt-3 mb-2">Email</label>
+            <div class="d-flex align-items-center">
+              <input
+                id="mail"
+                class="w-full p-2 in-bor-rad bor-gray fs-13"
+                type="text"
+                placeholder="ali@mail.com"
+                disabled
+              />
+              <span
+                class="les-bold ps-2 cur-p"
+                id="change"
+                onclick="changeBtnfun()"
+                style="color: var(--blue)"
+                >Change</span
+              >
+            </div>
+            <div class="d-flex justify-content-end align-items-center mt-3">
+              <input
+                class="btn m-0 me-2 les-bold in-bor-rad"
+                style="background-color: var(--blue); color: white"
+                type="submit"
+                value="Save"
+              />
+              <input
+                class="btn m-0 les-bold in-bor-rad"
+                style="background-color: var(--blue); color: white"
+                type="reset"
+                value="Cancel"
+              />
+            </div>
+          </div>
+          <div class="security-info bg-white bor-rad p-4">
+            <div class="headding mb-4">
+              <h1 class="fw-bold fs-4">Security Info</h1>
+              <span class="sub-font"
+                >Security Information About Your Account</span
+              >
+            </div>
+            <div
+              class="d-flex justify-content-between align-items-center bor-bottom pb-2 mb-3"
+            >
+              <div>
+                <span class="les-bold">Password</span>
+                <p class="sub-font fs-13">Last Change On 25/10/2021</p>
+              </div>
+              <a
+                href="#"
+                class="btn les-bold fs-6 me-0"
+                style="background-color: var(--blue); color: white"
+                >Change</a
+              >
+            </div>
+            <div
+              class="d-flex justify-content-between align-items-center bor-bottom pb-2 mb-3"
+            >
+              <div>
+                <span class="les-bold">Two-Factor Authentication</span>
+                <p class="sub-font fs-13">Enable/Disable The Feature</p>
+              </div>
+              <div class="toggle checked"></div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center pb-2">
+              <div>
+                <span class="les-bold">Devices</span>
+                <p class="sub-font fs-13">Check The Login Devices List</p>
+              </div>
+              <div
+                class="les-bold in-bor-rad cur-p p-btn"
+                style="background-color: var(--lightGray)"
+              >
+                Devices
+              </div>
+            </div>
+          </div>
+          <div class="social-info bg-white bor-rad p-4">
+            <div class="headding mb-4">
+              <h1 class="fw-bold fs-4">Social Info</h1>
+              <span class="sub-font">Social Media Information</span>
+            </div>
+            <div
+              class="d-flex align-items-center bor-gray in-bor-rad align-items-center mb-3"
+              style="background-color: #f6f6f6; border-color: #ddd"
+            >
+              <div
+                class="social-icon d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+              <input
+                class="sub-font fs-13 ms-2 w-full h-full"
+                type="text"
+                style="background-color: #f6f6f6"
+                placeholder="Twitter Username"
+              />
+            </div>
+            <div
+              class="d-flex align-items-center bor-gray in-bor-rad align-items-center mb-3"
+              style="background-color: #f6f6f6; border-color: #ddd"
+            >
+              <div
+                class="social-icon d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <input
+                class="sub-font fs-13 ms-2 w-full h-full"
+                type="text"
+                style="background-color: #f6f6f6"
+                placeholder="Facebook Username"
+              />
+            </div>
+            <div
+              class="d-flex align-items-center bor-gray in-bor-rad align-items-center mb-3"
+              style="background-color: #f6f6f6; border-color: #ddd"
+            >
+              <div
+                class="social-icon d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
+              <input
+                class="sub-font fs-13 ms-2 w-full h-full"
+                type="text"
+                style="background-color: #f6f6f6"
+                placeholder="Linkedin Username"
+              />
+            </div>
+            <div
+              class="d-flex align-items-center bor-gray in-bor-rad align-items-center"
+              style="background-color: #f6f6f6; border-color: #ddd"
+            >
+              <div
+                class="social-icon d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+              <input
+                class="sub-font fs-13 ms-2 w-full h-full"
+                type="text"
+                style="background-color: #f6f6f6"
+                placeholder="Youtube Username"
+              />
+            </div>
+          </div>
+          <div class="widgets-control bg-white bor-rad p-4">
+            <div class="headding mb-4">
+              <h1 class="fw-bold fs-4">Widgets Control</h1>
+              <span class="sub-font">Show/Hide Widgets</span>
+            </div>
+            <form class="checkbox" action="">
+              <div class="yearly-targets mb-3">
+                <input type="checkbox" id="one" checked />
+                <label
+                  class="position-relative cur-p les-bold"
+                  style="padding-left: 30px"
+                  for="one"
+                  >Quick Draft</label
+                >
+              </div>
+              <div class="mb-3">
+                <input type="checkbox" id="two" checked />
+                <label
+                  class="position-relative cur-p les-bold"
+                  style="padding-left: 30px"
+                  for="two"
+                  >Yearly Targets</label
+                >
+              </div>
+              <div class="mb-3">
+                <input type="checkbox" id="three" checked />
+                <label
+                  class="position-relative cur-p les-bold"
+                  style="padding-left: 30px"
+                  for="three"
+                  >Tickets Statistics</label
+                >
+              </div>
+              <div class="mb-3">
+                <input type="checkbox" id="four" checked />
+                <label
+                  class="position-relative cur-p les-bold"
+                  style="padding-left: 30px"
+                  for="four"
+                  >Latest News</label
+                >
+              </div>
+              <div class="mb-3">
+                <input type="checkbox" id="five" />
+                <label
+                  class="position-relative cur-p les-bold"
+                  style="padding-left: 30px"
+                  for="five"
+                  >Latest Tasks</label
+                >
+              </div>
+              <div>
+                <input type="checkbox" id="six" checked />
+                <label
+                  class="position-relative cur-p les-bold"
+                  style="padding-left: 30px"
+                  for="six"
+                  >Top Search Items</label
+                >
+              </div>
+            </form>
+          </div>
+          <div class="backup-manager bg-white bor-rad p-4">
+            <div class="headding mb-4">
+              <h1 class="fw-bold fs-4">Backup Manager</h1>
+              <span class="sub-font">Control Backup Time And Location</span>
+            </div>
+            <form class="bor-bottom pb-3" action="">
+              <div class="mb-2">
+                <input id="daily" name="period" type="radio" checked />
+                <label
+                  for="daily"
+                  class="position-relative cur-p les-bold"
+                  style="padding-left: 30px"
+                  >Daily</label
+                >
+              </div>
+              <div class="mb-2">
+                <input id="weekly" name="period" type="radio" />
+                <label
+                  for="weekly"
+                  class="position-relative cur-p les-bold"
+                  style="padding-left: 30px"
+                  >Weekly</label
+                >
+              </div>
+              <div>
+                <input id="monthly" name="period" type="radio" />
+                <label
+                  for="monthly"
+                  class="position-relative cur-p les-bold"
+                  style="padding-left: 30px"
+                  >Monthly</label
+                >
+              </div>
+            </form>
+            <div class="cards mt-3">
+              <div
+                class="p-3 bor f-center in-bor-rad bor-all flex-column cur-p flex-grow-1 me-md-2 m-md-0 mb-2"
+              >
+                <i class="fa-solid fa-server d-block mb-10 mb-2"></i>
+                <p class="m-0">Megaman</p>
+              </div>
+              <div
+                class="p-3 bor f-center in-bor-rad bor-all flex-column cur-p flex-grow-1 me-md-2 m-md-0 mb-2 active"
+              >
+                <i class="fa-solid fa-server d-block mb-10 mb-2"></i>
+                <p class="m-0">Zero</p>
+              </div>
+              <div
+                class="p-3 bor f-center in-bor-rad bor-all flex-column flex-grow-1 cur-p"
+              >
+                <i class="fa-solid fa-server d-block mb-10 mb-2"></i>
+                <p class="m-0">Sigma</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const checkBox = document.querySelectorAll(".settings .checkbox input");
+      for (let i = 0; i < checkBox.length; i++) {
+        checkBox[i].addEventListener("change", (event) => {
+          const isChecked = event.target.checked;
+          localStorage.setItem(`isChecked${i + 1}`, isChecked);
+        });
+      }
+      function setCheckBox() {
+        for (let i = 0; i < checkBox.length; i++) {
+          if (localStorage.getItem(`isChecked${i + 1}`) == "false") {
+            checkBox[i].removeAttribute("checked");
+          } else {
+            checkBox[i].checked = true;
+          }
+        }
+      }
+      setCheckBox();
+    </script>
+    <script src="/js/main.js"></script>
+    <script src="/js/all.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

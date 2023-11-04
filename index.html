@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700&family=Open+Sans:wght@300;400;500;700&family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="dashboard page d-flex">
+      <aside class="text-center">
+        <h3 class="mb-5 fs-4 position-relative fw-bold">Ali</h3>
+        <ul class="list-unstyled text-start">
+          <li>
+            <a
+              class="d-flex align-items-center p-2 mb-2 active"
+              href="index.html"
+            >
+              <i class="fa-regular fa-chart-bar fa-fw"></i>
+              <span class="ps-3">Dashboard</span>
+            </a>
+          </li>
+          <li class="">
+            <a
+              class="d-flex align-items-center p-2 mb-2 text-decoration-none"
+              href="html-pages/settings.html"
+            >
+              <i class="fa-solid fa-gear fa-fw pe-3 fs-6"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-items-center p-2 mb-2 text-decoration-none"
+              href="html-pages/profile.html"
+            >
+              <i class="fa-regular fa-user fa-fw pe-3 fs-6"></i>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-items-center p-2 mb-2 text-decoration-none"
+              href="html-pages/projects.html"
+            >
+              <i class="fa-solid fa-diagram-project fa-fw pe-3 fs-6"></i>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-items-center p-2 mb-2 text-decoration-none"
+              href="html-pages/courses.html"
+            >
+              <i class="fa-solid fa-graduation-cap fa-fw pe-3 fs-6"></i>
+              <span>Courses</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-items-center p-2 mb-2 text-decoration-none"
+              href="html-pages/friends.html"
+            >
+              <i class="fa-regular fa-circle-user fa-fw pe-3 fs-6"></i>
+              <span>Friends</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-items-center p-2 mb-2 text-decoration-none"
+              href="html-pages/files.html"
+            >
+              <i class="fa-regular fa-file fa-fw pe-3 fs-6"></i>
+              <span>Files</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-items-center p-2 mb-2 text-decoration-none"
+              href="html-pages/plans.html"
+            >
+              <i class="fa-regular fa-credit-card fa-fw pe-3 fs-6"></i>
+              <span>Plans</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <div class="main-container">
+        <div
+          class="header d-flex justify-content-between align-items-center p-3"
+        >
+          <div class="search position-relative">
+            <input class="" type="search" placeholder="Type A Keyword" />
+          </div>
+          <div class="icon d-flex align-items-center">
+            <span class="position-relative me-3 cur-p">
+              <i class="fa-regular fa-bell fa-lg"></i>
+            </span>
+            <img class="cur-p" src="imgs/avatar.png" alt="Profile Photo" />
+          </div>
+        </div>
+        <h1 class="fw-bold fs-2 m-4 mb-5 position-relative page-title">
+          Dashboard
+        </h1>
+        <div class="cards wrapping gap-3 p-3">
+          <div class="welcome bor-rad">
+            <div class="up d-flex justify-content-between p-3">
+              <div>
+                <h1 class="fw-bold fs-4">Welcome</h1>
+                <span class="sub-font">Ali</span>
+              </div>
+              <div>
+                <img src="imgs/welcome.png" alt="" />
+              </div>
+            </div>
+            <div class="avatar">
+              <img src="imgs/avatar.png" alt="" />
+            </div>
+            <div class="down my-4">
+              <div class="info d-flex justify-content-around p-3 text-center">
+                <div>
+                  Ali Altayar
+                  <span class="d-block fw-normal mt-2">Developer</span>
+                </div>
+                <div>
+                  10
+                  <span class="d-block fw-normal mt-2">Projects</span>
+                </div>
+                <div>
+                  $1500 <br />
+                  <span class="d-block fw-normal mt-2">Earned</span>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="btn btn-primary">Profile</a>
+          </div>
+          <div class="quick-draft bor-rad p-4">
+            <div class="headding mb-4">
+              <h1 class="fw-bold fs-4">Quick Draft</h1>
+              <span class="sub-font">Write A Draft For Your Ideas</span>
+            </div>
+            <div class="texts">
+              <input type="text" class="in-bor-rad mb-3" placeholder="Title" />
+              <textarea
+                class="in-bor-rad mb-3"
+                placeholder="Your Thought"
+              ></textarea>
+            </div>
+            <a href="#" class="btn btn-primary me-0">Save</a>
+          </div>
+          <div class="yearly-targets bor-rad p-4" id="yearly-targets">
+            <div class="headding mb-4">
+              <h1 class="fw-bold fs-4">Yearly Targets</h1>
+              <span class="sub-font">Targets Of The Year</span>
+            </div>
+            <div class="content mb-4 d-flex">
+              <div
+                class="icon d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-solid fa-dollar-sign fa-lg c-blue"></i>
+              </div>
+              <div class="detials">
+                <span class="sub-font d-block">Money</span>
+                <span class="d-block fw-bold">$2000</span>
+                <div class="progres mt-2 position-relative">
+                  <span
+                    class="percentage d-block position-relative"
+                    style="
+                      width: 80%;
+                      height: 100%;
+                      background-color: var(--blue);
+                    "
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div class="content mb-4 d-flex">
+              <div
+                class="icon yellow d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-solid fa-code fa-lg c-orange"></i>
+              </div>
+              <div class="detials">
+                <span class="sub-font d-block">Projects</span>
+                <span class="d-block fw-bold">24</span>
+                <div class="progres yellow mt-2 position-relative">
+                  <span
+                    class="percentage yellow d-block position-relative"
+                    style="
+                      width: 55%;
+                      height: 100%;
+                      background-color: var(--yellow);
+                    "
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div class="content d-flex">
+              <div
+                class="icon green d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-solid fa-user fa-lg c-green"></i>
+              </div>
+              <div class="detials">
+                <span class="sub-font d-block">Team</span>
+                <span class="d-block fw-bold">12</span>
+                <div class="progres green mt-2 position-relative">
+                  <span
+                    class="percentage green d-block position-relative"
+                    style="
+                      width: 75%;
+                      height: 100%;
+                      background-color: (--green);
+                    "
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tickets-statistics bor-rad p-4 bg-white">
+            <div class="headding mb-4">
+              <h1 class="fw-bold fs-4">Tickets Statistics</h1>
+              <span class="sub-font">Everything About Support Tickets</span>
+              <div class="sml-cards d-flex justify-content-between flex-wrap">
+                <div
+                  class="card d-flex flex-column justify-content-center align-items-center mt-md-4 mt-3 bor-rad p-4"
+                >
+                  <i
+                    class="fa-regular fa-rectangle-list fa-2x mb-10 c-orange fs-3"
+                    style="color: var(--yellow)"
+                  ></i>
+                  <span class="fw-bold fs-3 mt-2">2500</span>
+                  <span class="sub-font mt-2">Total</span>
+                </div>
+                <div
+                  class="card d-flex flex-column justify-content-center align-items-center mt-md-4 mt-3 bor-rad p-4"
+                >
+                  <i
+                    class="fa-solid fa-spinner fa-2x mb-10 c-blue fs-3"
+                    style="color: var(--blue)"
+                  ></i>
+                  <span class="fw-bold fs-3 mt-2">500</span>
+                  <span class="sub-font mt-2">Pending</span>
+                </div>
+                <div
+                  class="card d-flex flex-column justify-content-center align-items-center mt-md-4 mt-3 bor-rad p-4"
+                >
+                  <i
+                    class="fa-regular fa-circle-check fa-2x mb-10 c-green fs-3"
+                    style="color: var(--green)"
+                  ></i>
+                  <span class="fw-bold fs-3 mt-2">1900</span>
+                  <span class="sub-font mt-2">Closed</span>
+                </div>
+                <div
+                  class="card d-flex flex-column justify-content-center align-items-center mt-md-4 mt-3 bor-rad p-4"
+                >
+                  <i
+                    class="fa-regular fa-rectangle-xmark fa-2x mb-10 c-red fs-3"
+                    style="color: var(--red)"
+                  ></i>
+                  <span class="fw-bold fs-3 mt-2">100</span>
+                  <span class="sub-font mt-2">Deleted</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="latest-news bor-rad p-4 bg-white">
+            <div class="headding mb-4">
+              <h1 class="fw-bold fs-4">Latest News</h1>
+            </div>
+            <div
+              class="news-content d-flex align-items-center pb-4 bor-bottom mb-4"
+            >
+              <img class="in-bor-rad me-md-4" src="imgs/news-01.png" alt="" />
+              <div class="text flex-grow-1">
+                <h3 class="fs-6 mb-2 fw-bold">Create SASS Section</h3>
+                <p class="m-0 sub-font" style="font-size: 14px">
+                  New SASS Examples & Tutorials
+                </p>
+              </div>
+              <span class="in-bor-rad px-2 py-1">3 Days Ago</span>
+            </div>
+            <div
+              class="news-content d-flex align-items-center pb-4 bor-bottom mb-4"
+            >
+              <img class="in-bor-rad me-md-4" src="/imgs/news-02.png" alt="" />
+              <div class="text flex-grow-1">
+                <h3 class="fs-6 mb-2 fw-bold">Changed The Design</h3>
+                <p class="m-0 sub-font" style="font-size: 14px">
+                  A Brand New Website Design
+                </p>
+              </div>
+              <span class="in-bor-rad px-2 py-1">5 Days Ago</span>
+            </div>
+            <div
+              class="news-content d-flex align-items-center pb-4 bor-bottom mb-4"
+            >
+              <img class="in-bor-rad me-md-4" src="imgs/news-03.png" alt="" />
+              <div class="text flex-grow-1">
+                <h3 class="fs-6 mb-2 fw-bold">Team Increased</h3>
+                <p class="m-0 sub-font" style="font-size: 14px">
+                  3 Developers Joined The Team
+                </p>
+              </div>
+              <span class="in-bor-rad px-2 py-1">7 Days Ago</span>
+            </div>
+            <div class="news-content d-flex align-items-center pb-4">
+              <img class="in-bor-rad me-md-4" src="imgs/news-04.png" alt="" />
+              <div class="text flex-grow-1">
+                <h3 class="fs-6 mb-2 fw-bold">Added Payment Gateway</h3>
+                <p class="m-0 sub-font" style="font-size: 14px">
+                  Many New Payment Gateways Added
+                </p>
+              </div>
+              <span class="in-bor-rad px-2 py-1">9 Days Ago</span>
+            </div>
+          </div>
+          <div class="latest-task bor-rad p-4 bg-white">
+            <div class="headding mb-4">
+              <h1 class="fw-bold fs-4">Latest Task</h1>
+            </div>
+            <div
+              class="task-content d-flex align-items-center pb-3 bor-bottom mb-4"
+            >
+              <div class="text flex-grow-1">
+                <h3 class="fs-6 mb-1 fw-bold">Record One New Video</h3>
+                <p class="m-0 fs-6 sub-font" style="font-size: 14px">
+                  Record Python Create Exe Project
+                </p>
+              </div>
+              <i class="fa-regular fa-trash-can delete"></i>
+            </div>
+            <div
+              class="task-content d-flex align-items-center pb-3 bor-bottom mb-4"
+            >
+              <div class="text flex-grow-1">
+                <h3 class="fs-6 mb-1 fw-bold">Write Article</h3>
+                <p class="m-0 fs-6 sub-font" style="font-size: 14px">
+                  Write Low Level vs High Level Languages
+                </p>
+              </div>
+              <i class="fa-regular fa-trash-can delete"></i>
+            </div>
+            <div
+              class="task-content d-flex align-items-center pb-3 bor-bottom mb-4"
+            >
+              <div class="text flex-grow-1">
+                <h3 class="fs-6 mb-1 fw-bold">Finish Project</h3>
+                <p class="m-0 fs-6 sub-font" style="font-size: 14px">
+                  Publish Academy Programming Project
+                </p>
+              </div>
+              <i class="fa-regular fa-trash-can delete"></i>
+            </div>
+            <div
+              class="task-content finish d-flex align-items-center pb-3 bor-bottom mb-4"
+              style="opacity: 0.4"
+            >
+              <div class="text flex-grow-1">
+                <h3
+                  class="fs-6 mb-1 fw-bold"
+                  style="text-decoration: line-through"
+                >
+                  Attend The Meeting
+                </h3>
+                <p
+                  class="m-0 fs-6 sub-font"
+                  style="font-size: 14px; text-decoration: line-through"
+                >
+                  Attend The Project Business Analysis Meeting
+                </p>
+              </div>
+              <i class="fa-regular fa-trash-can delete"></i>
+            </div>
+            <div class="task-content d-flex align-items-center">
+              <div class="text flex-grow-1">
+                <h3 class="fs-6 mb-1 fw-bold">Finish Lesson</h3>
+                <p class="m-0 fs-6 sub-font" style="font-size: 14px">
+                  Finish Teaching Flex Box
+                </p>
+              </div>
+              <i class="fa-regular fa-trash-can delete"></i>
+            </div>
+          </div>
+          <div class="top-search-items bor-rad p-4 bg-white">
+            <div class="headding mb-4">
+              <h1 class="fw-bold fs-4">Top Search Items</h1>
+            </div>
+            <div class="search-content d-flex align-items-center py-2 mb-3">
+              <div class="text flex-grow-1">
+                <h3
+                  class="fs-6 mb-2"
+                  style="color: var(--gray); font-weight: 500"
+                >
+                  Keyword
+                </h3>
+              </div>
+              <span
+                class="px-2 py-1"
+                style="color: var(--gray); font-weight: 500"
+                >Search Count</span
+              >
+            </div>
+            <div class="search-content d-flex align-items-center py-2 mb-3">
+              <div class="text flex-grow-1">
+                <h3 class="fs-6 mb-2">Programming</h3>
+              </div>
+              <span
+                class="in-bor-rad px-2 py-1"
+                style="
+                  background-color: var(--lightGray);
+                  font-size: 13px;
+                  font-weight: 500;
+                "
+                >220</span
+              >
+            </div>
+            <div class="search-content d-flex align-items-center py-2 mb-3">
+              <div class="text flex-grow-1">
+                <h3 class="fs-6 mb-2">JavaScript</h3>
+              </div>
+              <span
+                class="in-bor-rad px-2 py-1"
+                style="
+                  background-color: var(--lightGray);
+                  font-size: 13px;
+                  font-weight: 500;
+                "
+                >180</span
+              >
+            </div>
+            <div class="search-content d-flex align-items-center py-2 mb-3">
+              <div class="text flex-grow-1">
+                <h3 class="fs-6 mb-2">PHP</h3>
+              </div>
+              <span
+                class="in-bor-rad px-2 py-1"
+                style="
+                  background-color: var(--lightGray);
+                  font-size: 13px;
+                  font-weight: 500;
+                "
+                >160</span
+              >
+            </div>
+            <div class="search-content d-flex align-items-center py-2 mb-3">
+              <div class="text flex-grow-1">
+                <h3 class="fs-6 mb-2">Code</h3>
+              </div>
+              <span
+                class="in-bor-rad px-2 py-1"
+                style="
+                  background-color: var(--lightGray);
+                  font-size: 13px;
+                  font-weight: 500;
+                "
+                >145</span
+              >
+            </div>
+            <div class="search-content d-flex align-items-center py-2 mb-3">
+              <div class="text flex-grow-1">
+                <h3 class="fs-6 mb-2">Design</h3>
+              </div>
+              <span
+                class="in-bor-rad px-2 py-1"
+                style="
+                  background-color: var(--lightGray);
+                  font-size: 13px;
+                  font-weight: 500;
+                "
+                >110</span
+              >
+            </div>
+            <div class="search-content d-flex align-items-center pt-2">
+              <div class="text flex-grow-1">
+                <h3 class="fs-6 mb-0">Logic</h3>
+              </div>
+              <span
+                class="in-bor-rad px-2 py-1"
+                style="
+                  background-color: var(--lightGray);
+                  font-size: 13px;
+                  font-weight: 500;
+                "
+                >95</span
+              >
+            </div>
+          </div>
+          <div class="latest-upload bor-rad p-4 bg-white">
+            <div class="headding mb-4">
+              <h1 class="fw-bold fs-4">Latest Uploads</h1>
+            </div>
+            <div
+              class="upload-content d-flex align-items-center pb-2 bor-bottom mb-3"
+            >
+              <img class="me-md-4 me-3" src="imgs/pdf.svg" alt="PDF" />
+              <div class="text flex-grow-1">
+                <h3 class="fs-6 m-0">my-file.pdf</h3>
+                <p class="m-0 sub-font">Ali</p>
+              </div>
+              <span
+                class="in-bor-rad px-2 py-1"
+                style="
+                  background-color: var(--lightGray);
+                  font-size: 13px;
+                  font-weight: 500;
+                "
+                >2.9mb</span
+              >
+            </div>
+            <div
+              class="upload-content d-flex align-items-center pb-2 bor-bottom mb-3"
+            >
+              <img class="me-md-4 me-3" src="imgs/avi.svg" alt="PDF" />
+              <div class="text flex-grow-1">
+                <h3 class="fs-6 m-0">My-Video-File.avi</h3>
+                <p class="m-0 sub-font">Admin</p>
+              </div>
+              <span
+                class="in-bor-rad px-2 py-1"
+                style="
+                  background-color: var(--lightGray);
+                  font-size: 13px;
+                  font-weight: 500;
+                "
+                >4.9mb</span
+              >
+            </div>
+            <div
+              class="upload-content d-flex align-items-center pb-2 bor-bottom mb-3"
+            >
+              <img class="me-md-4 me-3" src="imgs/psd.svg" alt="PDF" />
+              <div class="text flex-grow-1">
+                <h3 class="fs-6 m-0">My-Psd-File.pdf</h3>
+                <p class="m-0 sub-font">Abood</p>
+              </div>
+              <span
+                class="in-bor-rad px-2 py-1"
+                style="
+                  background-color: var(--lightGray);
+                  font-size: 13px;
+                  font-weight: 500;
+                "
+                >4.5mb</span
+              >
+            </div>
+            <div
+              class="upload-content d-flex align-items-center pb-2 bor-bottom mb-3"
+            >
+              <img class="me-md-4 me-3" src="imgs/zip.svg" alt="PDF" />
+              <div class="text flex-grow-1">
+                <h3 class="fs-6 m-0">My-Zip-File.pdf</h3>
+                <p class="m-0 sub-font">Ahmed</p>
+              </div>
+              <span
+                class="in-bor-rad px-2 py-1"
+                style="
+                  background-color: var(--lightGray);
+                  font-size: 13px;
+                  font-weight: 500;
+                "
+                >8.9mb</span
+              >
+            </div>
+            <div
+              class="upload-content d-flex align-items-center pb-2 bor-bottom mb-3"
+            >
+              <img class="me-md-4 me-3" src="imgs/dll.svg" alt="PDF" />
+              <div class="text flex-grow-1">
+                <h3 class="fs-6 m-0">My-DLL-File.pdf</h3>
+                <p class="m-0 sub-font">Hesham</p>
+              </div>
+              <span
+                class="in-bor-rad px-2 py-1"
+                style="
+                  background-color: var(--lightGray);
+                  font-size: 13px;
+                  font-weight: 500;
+                "
+                >4.9mb</span
+              >
+            </div>
+            <div class="upload-content d-flex align-items-center">
+              <img class="me-md-4 me-3" src="imgs/eps.svg" alt="PDF" />
+              <div class="text flex-grow-1">
+                <h3 class="fs-6 m-0">My-Eps-File.pdf</h3>
+                <p class="m-0 sub-font">Altayar</p>
+              </div>
+              <span
+                class="in-bor-rad px-2 py-1"
+                style="
+                  background-color: var(--lightGray);
+                  font-size: 13px;
+                  font-weight: 500;
+                "
+                >7.9mb</span
+              >
+            </div>
+          </div>
+          <div
+            class="last-project-progress position-relative bor-rad p-4 bg-white"
+          >
+            <div class="headding mb-4">
+              <h1 class="fw-bold fs-4">Last Project Progress</h1>
+            </div>
+            <ul class="progress-content position-relative list-unstyled">
+              <li
+                class="position-relative fs-6 d-flex align-items-center mb-4"
+                style="font-weight: 500"
+              >
+                Got The Project
+              </li>
+              <li
+                class="position-relative fs-6 d-flex align-items-center mb-4"
+                style="font-weight: 500"
+              >
+                Started The Project
+              </li>
+              <li
+                class="position-relative fs-6 d-flex align-items-center mb-4"
+                style="font-weight: 500"
+              >
+                The Project About To Finish
+              </li>
+              <li
+                class="progress-ani position-relative fs-6 d-flex align-items-center mb-4"
+                style="font-weight: 500"
+              >
+                Test The Project
+              </li>
+              <li
+                class="not-finish position-relative fs-6 d-flex align-items-center mb-3"
+                style="font-weight: 500"
+              >
+                Finish The Project & Get Money
+              </li>
+            </ul>
+            <img class="progress-img" src="imgs/project.png" alt="" />
+          </div>
+          <div class="reminders position-relative bor-rad p-4 bg-white">
+            <div class="headding mb-4">
+              <h1 class="fw-bold fs-4">Reminders</h1>
+            </div>
+            <ul class="reminder-content position-relative list-unstyled">
+              <li
+                class="position-relative fs-6 d-flex align-items-center mb-4"
+                style="font-weight: 500"
+              >
+                <span
+                  class="point bor-rad me-3"
+                  style="background-color: var(--blue)"
+                ></span>
+                <div class="text" style="border-left: 2px solid var(--blue)">
+                  <p class="mb-0 ms-3 fw-bold">Check My Tasks List</p>
+                  <span class="sub-font ms-3">28/2/2023 - 12:00am</span>
+                </div>
+              </li>
+              <li
+                class="position-relative fs-6 d-flex align-items-center mb-4"
+                style="font-weight: 500"
+              >
+                <span
+                  class="point bor-rad me-3"
+                  style="background-color: var(--green)"
+                ></span>
+                <div class="text" style="border-left: 2px solid var(--green)">
+                  <p class="mb-0 ms-3 fw-bold">Check My Projects</p>
+                  <span class="sub-font ms-3">26/10/2023 - 12:00am</span>
+                </div>
+              </li>
+              <li
+                class="position-relative fs-6 d-flex align-items-center mb-4"
+                style="font-weight: 500"
+              >
+                <span
+                  class="point bor-rad me-3"
+                  style="background-color: var(--yellow)"
+                ></span>
+                <div class="text" style="border-left: 2px solid var(--yellow)">
+                  <p class="mb-0 ms-3 fw-bold">Call All My Clients</p>
+                  <span class="sub-font ms-3">05/11/2022 - 12:00am</span>
+                </div>
+              </li>
+              <li
+                class="position-relative fs-6 d-flex align-items-center mb-4"
+                style="font-weight: 500"
+              >
+                <span
+                  class="point bor-rad me-3"
+                  style="background-color: var(--red)"
+                ></span>
+                <div class="text" style="border-left: 2px solid var(--red)">
+                  <p class="mb-0 ms-3 fw-bold">
+                    Finish The Development Workshop
+                  </p>
+                  <span class="sub-font ms-3">20/12/2022 - 12:00am</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="latest-post position-relative bor-rad p-4 bg-white">
+            <div class="headding mb-4">
+              <h1 class="fw-bold fs-4">Latest Post</h1>
+            </div>
+            <ul class="latest-post-content position-relative list-unstyled m-0">
+              <li class="d-flex align-items-center bor-bottom py-3">
+                <img
+                  src="imgs/avatar.png"
+                  class="me-3"
+                  alt="Avatar"
+                  style="max-width: 48px; max-height: 48px"
+                />
+                <div class="text">
+                  <p class="mb-0 fw-bold fs-6">Ali Altayar</p>
+                  <span class="sub-font fs-6 les-bold">About 3 Hours Ago</span>
+                </div>
+              </li>
+              <li class="les-bold bor-bottom py-4">
+                <p>
+                  You Can Fool All Of The People Some Of The Time, And Some Of
+                  The People All Of The Time, But You Can't Fool All Of The
+                  People All Of The Time.
+                </p>
+              </li>
+              <li class="d-flex justify-content-between mt-4">
+                <div class="les-bold" style="color: var(--gray)">
+                  <i class="fa-regular fa-heart"></i>
+                  <span>1.8K</span>
+                </div>
+                <div class="les-bold" style="color: var(--gray)">
+                  <i class="fa-regular fa-comments"></i>
+                  <span>500</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="soical-media-stats position-relative bor-rad p-4 bg-white"
+          >
+            <div class="headding mb-4">
+              <h1 class="fw-bold fs-4">Social Media Stats</h1>
+            </div>
+            <div class="soical-media-content">
+              <div
+                class="twitter box position-relative d-flex justify-content-between align-items-center mb-2"
+                style="background-color: rgb(29 161 242 / 20%); color: #1da1f2"
+              >
+                <div
+                  class="icon h-full d-flex justify-content-center align-items-center p-absolute"
+                  style="background-color: #1da1f2; color: white"
+                >
+                  <i class="fa-brands fa-twitter fa-2x"></i>
+                </div>
+                <span>90K Followers</span>
+                <a
+                  href="#"
+                  class="btn m-0"
+                  style="background-color: #1da1f2; color: white"
+                  >Follow</a
+                >
+              </div>
+              <div
+                class="facebook box position-relative d-flex justify-content-between align-items-center mb-2"
+                style="background-color: rgb(24 119 242 / 20%); color: #1877f2"
+              >
+                <div
+                  class="icon h-full d-flex justify-content-center align-items-center p-absolute"
+                  style="background-color: #1877f2; color: white"
+                >
+                  <i class="fa-brands fa-facebook-f fa-2x"></i>
+                </div>
+                <span>100K Like</span>
+                <a
+                  href="#"
+                  class="btn m-0"
+                  style="background-color: #1877f2; color: white"
+                  >Like</a
+                >
+              </div>
+              <div
+                class="youtube box position-relative d-flex justify-content-between align-items-center mb-2"
+                style="background-color: rgb(255 0 0 / 20%); color: #ff0000"
+              >
+                <div
+                  class="icon h-full d-flex justify-content-center align-items-center p-absolute"
+                  style="background-color: #ff0000; color: white"
+                >
+                  <i class="fa-brands fa-youtube fa-2x"></i>
+                </div>
+                <span>1M Subs</span>
+                <a
+                  href="#"
+                  class="btn m-0"
+                  style="background-color: #ff0000; color: white"
+                  >Subscribe</a
+                >
+              </div>
+              <div
+                class="youtube box position-relative d-flex justify-content-between align-items-center"
+                style="background-color: rgb(0 119 181 / 20%); color: #0077b5"
+              >
+                <div
+                  class="icon h-full d-flex justify-content-center align-items-center p-absolute"
+                  style="background-color: #0077b5; color: white"
+                >
+                  <i class="fa-brands fa-linkedin fa-2x"></i>
+                </div>
+                <span>70K Followers</span>
+                <a
+                  href="#"
+                  class="btn m-0"
+                  style="background-color: #0077b5; color: white"
+                  >Follow</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="table-content m-4 bg-white bor-rad p-4">
+          <h1 class="fw-bold fs-4 mb-4">Projects</h1>
+          <div class="responsive-table">
+            <table class="w-full" style="min-width: 1000px">
+              <thead>
+                <tr>
+                  <td>Name</td>
+                  <td>Finish Date</td>
+                  <td>Client</td>
+                  <td>Price</td>
+                  <td>Team</td>
+                  <td>Status</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Ministry Wikipedia</td>
+                  <td>10 May 2022</td>
+                  <td>Ministry</td>
+                  <td>$5300</td>
+                  <td>
+                    <img src="imgs/team-01.png" alt="" class="bg-white" />
+                    <img src="imgs/team-02.png" alt="" class="bg-white" />
+                    <img src="imgs/team-03.png" alt="" class="bg-white" />
+                    <img src="imgs/team-04.png" alt="" class="bg-white" />
+                  </td>
+                  <td>
+                    <span
+                      class="btn m-0"
+                      style="color: white; background-color: var(--yellow)"
+                      >Pending</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Elzero Shop</td>
+                  <td>12 Oct 2021</td>
+                  <td>Elzero Company</td>
+                  <td>$1500</td>
+                  <td>
+                    <img src="imgs/team-01.png" alt="" class="bg-white" />
+                    <img src="imgs/team-02.png" alt="" class="bg-white" />
+                    <img src="imgs/team-04.png" alt="" class="bg-white" />
+                  </td>
+                  <td>
+                    <span
+                      class="btn m-0"
+                      style="color: white; background-color: var(--blue)"
+                      >In Progress</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Bouba App</td>
+                  <td>05 Sep 2021</td>
+                  <td>Bouba</td>
+                  <td>$800</td>
+                  <td>
+                    <img src="imgs/team-02.png" alt="" class="bg-white" />
+                    <img src="imgs/team-03.png" alt="" class="bg-white" />
+                  </td>
+                  <td>
+                    <span
+                      class="btn m-0"
+                      style="color: white; background-color: var(--green)"
+                      >Completed</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Mahmoud Website</td>
+                  <td>22 May 2021</td>
+                  <td>Mahmoud</td>
+                  <td>$600</td>
+                  <td>
+                    <img src="imgs/team-01.png" alt="" class="bg-white" />
+                    <img src="imgs/team-02.png" alt="" class="bg-white" />
+                  </td>
+                  <td>
+                    <span
+                      class="btn m-0"
+                      style="color: white; background-color: var(--green)"
+                      >Completed</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Sayed Website</td>
+                  <td>24 May 2021</td>
+                  <td>Sayed</td>
+                  <td>$300</td>
+                  <td>
+                    <img src="imgs/team-01.png" alt="" class="bg-white" />
+                    <img src="imgs/team-02.png" alt="" class="bg-white" />
+                  </td>
+                  <td>
+                    <span
+                      class="btn m-0"
+                      style="color: white; background-color: var(--red)"
+                      >Rejected</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Arena Application</td>
+                  <td>01 Mar 2021</td>
+                  <td>Arena Company</td>
+                  <td>$2600</td>
+                  <td>
+                    <img src="imgs/team-01.png" alt="" class="bg-white" />
+                    <img src="imgs/team-02.png" alt="" class="bg-white" />
+                    <img src="imgs/team-03.png" alt="" class="bg-white" />
+                    <img src="imgs/team-05.png" alt="" class="bg-white" />
+                  </td>
+                  <td>
+                    <span
+                      class="btn m-0"
+                      style="color: white; background-color: var(--green)"
+                      >Completed</span
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const myCardDivs = document.querySelectorAll(".dashboard .cards>div");
+      console.log(myCardDivs);
+      function showOrHideDiv() {
+        for (let i = 1; i < 7; i++) {
+          const isChecked = localStorage.getItem(`isChecked${i}`) == "true";
+          console.log(myCardDivs[i]);
+          if (isChecked) {
+            myCardDivs[i].style.display = "block";
+          } else {
+            myCardDivs[i].style.display = "none";
+          }
+        }
+      }
+      showOrHideDiv();
+    </script>
+    <script src="js/main.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
